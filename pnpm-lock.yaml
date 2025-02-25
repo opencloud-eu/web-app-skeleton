@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@ownclouders/eslint-config':
-        specifier: 11.0.6
-        version: 11.0.6(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.8.1(@typescript-eslint/parser@8.8.1(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(prettier@3.4.2)
+        specifier: 11.2.0
+        version: 11.2.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.8.1(@typescript-eslint/parser@8.8.1(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(prettier@3.4.2)
       '@ownclouders/extension-sdk':
         specifier: 11.0.6
         version: 11.0.6(sass@1.69.7)(vite@6.0.7(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))
@@ -554,8 +554,8 @@ packages:
     peerDependencies:
       vue: ^3.5.11
 
-  '@ownclouders/eslint-config@11.0.6':
-    resolution: {integrity: sha512-5K3dN3+ZTqqHA/OUybt9RUtdlp5r9kYpXnHpwit/3XbsmpIgbFTcdKiadM9tR/YtCVqR3W6q04W6QkRY45xRSQ==}
+  '@ownclouders/eslint-config@11.2.0':
+    resolution: {integrity: sha512-SEK59zbT1lQsTE6jkxz6TGI31iwkxfsDibBUQJQVV99FdowkYiOaqzKQLKOd7Ym/8oB6zTvI1aLXireDuhmgIg==}
     peerDependencies:
       eslint: ^9.0.0
 
@@ -2978,7 +2978,7 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/compiler-sfc'
 
-  '@ownclouders/eslint-config@11.0.6(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.8.1(@typescript-eslint/parser@8.8.1(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(prettier@3.4.2)':
+  '@ownclouders/eslint-config@11.2.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.8.1(@typescript-eslint/parser@8.8.1(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(prettier@3.4.2)':
     dependencies:
       '@babel/eslint-parser': 7.25.9(@babel/core@7.25.2)(eslint@9.17.0)
       '@typescript-eslint/parser': 8.8.1(eslint@9.17.0)(typescript@5.7.3)
