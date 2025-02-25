@@ -13,7 +13,7 @@ importers:
         version: 1.0.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.8.1(@typescript-eslint/parser@8.8.1(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(typescript@5.7.3))(eslint@9.17.0)(prettier@3.4.2)
       '@opencloud-eu/extension-sdk':
         specifier: ^1.0.0
-        version: 1.0.0(sass@1.69.7)(vite@6.0.7(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))
+        version: 1.0.0(sass@1.69.7)(vite@6.0.9(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))
       '@opencloud-eu/prettier-config':
         specifier: ^1.0.0
         version: 1.0.0
@@ -48,8 +48,8 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
       vite:
-        specifier: 6.0.7
-        version: 6.0.7(@types/node@22.10.5)(sass@1.69.7)
+        specifier: 6.0.9
+        version: 6.0.9(@types/node@22.10.5)(sass@1.69.7)
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.5)(happy-dom@15.11.7)(sass@1.69.7)
@@ -2603,8 +2603,8 @@ packages:
       terser:
         optional: true
 
-  vite@6.0.7:
-    resolution: {integrity: sha512-RDt8r/7qx9940f8FcOIAH9PTViRrghKaK2K1jY3RaAURrEUbm9Du1mJ72G+jlhtG3WwodnfzY8ORQZbBavZEAQ==}
+  vite@6.0.9:
+    resolution: {integrity: sha512-MSgUxHcaXLtnBPktkbUSoQUANApKYuxZ6DrbVENlIorbhL2dZydTLaZ01tjUoE3szeFzlFk9ANOKk0xurh4MKA==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -3558,12 +3558,12 @@ snapshots:
       - prettier
       - supports-color
 
-  '@opencloud-eu/extension-sdk@1.0.0(sass@1.69.7)(vite@6.0.7(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))':
+  '@opencloud-eu/extension-sdk@1.0.0(sass@1.69.7)(vite@6.0.9(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))':
     dependencies:
-      '@vitejs/plugin-vue': 5.1.4(vite@6.0.7(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))
+      '@vitejs/plugin-vue': 5.1.4(vite@6.0.9(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))
       rollup-plugin-serve: 3.0.0
       sass: 1.69.7
-      vite: 6.0.7(@types/node@22.10.5)(sass@1.69.7)
+      vite: 6.0.9(@types/node@22.10.5)(sass@1.69.7)
     transitivePeerDependencies:
       - vue
 
@@ -3921,9 +3921,9 @@ snapshots:
 
   '@vavt/util@2.1.0': {}
 
-  '@vitejs/plugin-vue@5.1.4(vite@6.0.7(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))':
+  '@vitejs/plugin-vue@5.1.4(vite@6.0.9(@types/node@22.10.5)(sass@1.69.7))(vue@3.5.13(typescript@5.7.3))':
     dependencies:
-      vite: 6.0.7(@types/node@22.10.5)(sass@1.69.7)
+      vite: 6.0.9(@types/node@22.10.5)(sass@1.69.7)
       vue: 3.5.13(typescript@5.7.3)
 
   '@vitest/expect@2.1.8':
@@ -5513,7 +5513,7 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.69.7
 
-  vite@6.0.7(@types/node@22.10.5)(sass@1.69.7):
+  vite@6.0.9(@types/node@22.10.5)(sass@1.69.7):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.4.49
