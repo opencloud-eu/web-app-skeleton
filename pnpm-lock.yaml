@@ -24,8 +24,8 @@ importers:
         specifier: ^2.0.0
         version: 2.3.0
       '@opencloud-eu/web-pkg':
-        specifier: ^2.0.0
-        version: 2.3.0(@vue/compiler-sfc@3.5.13)(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))
+        specifier: ^3.0.0
+        version: 3.1.0(@vue/compiler-sfc@3.5.13)(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))
       '@types/node':
         specifier: ^22.13.10
         version: 22.15.17
@@ -560,8 +560,8 @@ packages:
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
-  '@opencloud-eu/design-system@2.3.0':
-    resolution: {integrity: sha512-D0EGL9bufijMuq+27swS9HPYqeA4+D2fx8QYoPZA1cVyP8h/q8hQU6E+ImAkECH8T7EB3+mtHEeG4zMhtVpLjA==}
+  '@opencloud-eu/design-system@3.1.0':
+    resolution: {integrity: sha512-bYxsCm0E+/UKUl7kkBPGDFwcXZ6S3WRDU0TmuvYY7cM751Jx7BUA3gFVAgJvLOaozTOMyasLdM/cTSQ5K+zyHA==}
 
   '@opencloud-eu/eslint-config@2.3.0':
     resolution: {integrity: sha512-8onTSWt6y/fZqaAfQa5J51ml7HtTCh/Kpuiy4+KEVbfgdbJsOBhQhTgCkmqdzrJdV7KhbEIT0Z/1oMf5lQNCdQ==}
@@ -585,8 +585,11 @@ packages:
   '@opencloud-eu/web-client@2.3.0':
     resolution: {integrity: sha512-Wrv7Q/tiwONjpbb2mzzCcuPRF5HypNmrty7XThboebItFQyaeVUolEtlZ9JS/w8SSnj1MpnSuP2TyrUnPuEWlQ==}
 
-  '@opencloud-eu/web-pkg@2.3.0':
-    resolution: {integrity: sha512-RqKiG9k3AtyTsZH989hKf7SMKfAS+Gyk4/R7xnvW3wrBq2Y2rnwLItWJ5gP2ISsm4yRT1PPI70bL+8F0bmkYCA==}
+  '@opencloud-eu/web-client@3.1.0':
+    resolution: {integrity: sha512-0AAT6lsCIH4ACYb3RBa+U12lvC+UEXrZTqJ676K8vJsH28uDI0xDXoYQ3FmfRJKxygvdk4hISVUnCAW8tC7deQ==}
+
+  '@opencloud-eu/web-pkg@3.1.0':
+    resolution: {integrity: sha512-QLiveRlu0XOBetCR/NnJ9uL/YPQ3Sq7nx0QZTY/RJ3McgHPBGztWhIzFityWOuqAiYVS2+UBz5lLG9YvTiQ7hA==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -2746,9 +2749,6 @@ packages:
     resolution: {integrity: sha512-iuFG7NamJ41Oshg4930iQgfIpRrUiatPWIekeznYgEf2EOraTRcDPTjy7gIOMtkdpKTaqPk1E68NO5PAGtJahA==}
     engines: {node: '>=14'}
 
-  webfontloader@1.6.28:
-    resolution: {integrity: sha512-Egb0oFEga6f+nSgasH3E0M405Pzn6y3/9tOVanv/DLfa1YBIgcv90L18YyWnvXkRbIM17v5Kv6IT2N6g1x5tvQ==}
-
   webidl-conversions@7.0.0:
     resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
     engines: {node: '>=12'}
@@ -3484,7 +3484,7 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@opencloud-eu/design-system@2.3.0(@vue/compiler-sfc@3.5.13)(vue@3.5.13(typescript@5.8.3))':
+  '@opencloud-eu/design-system@3.1.0(@vue/compiler-sfc@3.5.13)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@emoji-mart/data': 1.2.1
       '@popperjs/core': 2.11.8
@@ -3495,12 +3495,12 @@ snapshots:
       fuse.js: 7.1.0
       lodash-es: 4.17.21
       luxon: 3.6.1
+      portal-vue: 3.0.0(vue@3.5.13(typescript@5.8.3))
       tippy.js: 6.3.7
       vue-inline-svg: 4.0.1(vue@3.5.13(typescript@5.8.3))
       vue-router: 4.5.1(vue@3.5.13(typescript@5.8.3))
       vue-select: 4.0.0-beta.6(vue@3.5.13(typescript@5.8.3))
       vue3-gettext: 2.4.0(@vue/compiler-sfc@3.5.13)(vue@3.5.13(typescript@5.8.3))
-      webfontloader: 1.6.28
     transitivePeerDependencies:
       - '@vue/compiler-sfc'
       - vue
@@ -3555,13 +3555,28 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@opencloud-eu/web-pkg@2.3.0(@vue/compiler-sfc@3.5.13)(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))':
+  '@opencloud-eu/web-client@3.1.0':
+    dependencies:
+      '@casl/ability': 6.7.3
+      '@microsoft/fetch-event-source': 2.0.1
+      axios: 1.9.0
+      fast-xml-parser: 4.5.3
+      lodash-es: 4.17.21
+      luxon: 3.6.1
+      uuid: 11.1.0
+      webdav: 5.8.0
+      xml-js: 1.6.11
+      zod: 3.24.4
+    transitivePeerDependencies:
+      - debug
+
+  '@opencloud-eu/web-pkg@3.1.0(@vue/compiler-sfc@3.5.13)(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@casl/ability': 6.7.3
       '@casl/vue': 2.2.2(@casl/ability@6.7.3)(vue@3.5.13(typescript@5.8.3))
       '@microsoft/fetch-event-source': 2.0.1
-      '@opencloud-eu/design-system': 2.3.0(@vue/compiler-sfc@3.5.13)(vue@3.5.13(typescript@5.8.3))
-      '@opencloud-eu/web-client': 2.3.0
+      '@opencloud-eu/design-system': 3.1.0(@vue/compiler-sfc@3.5.13)(vue@3.5.13(typescript@5.8.3))
+      '@opencloud-eu/web-client': 3.1.0
       '@sentry/vue': 9.15.0(pinia@3.0.2(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
       '@uppy/core': 4.4.4
       '@uppy/drop-target': 3.1.1(@uppy/core@4.4.4)
@@ -5787,8 +5802,6 @@ snapshots:
       path-posix: 1.0.0
       url-join: 5.0.0
       url-parse: 1.5.10
-
-  webfontloader@1.6.28: {}
 
   webidl-conversions@7.0.0: {}
 
