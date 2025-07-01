@@ -21,8 +21,8 @@ importers:
         specifier: ^2.0.0
         version: 2.3.0
       '@opencloud-eu/web-client':
-        specifier: ^2.0.0
-        version: 2.3.0
+        specifier: ^3.0.0
+        version: 3.1.0
       '@opencloud-eu/web-pkg':
         specifier: ^3.0.0
         version: 3.1.0(@vue/compiler-sfc@3.5.13)(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))
@@ -581,9 +581,6 @@ packages:
 
   '@opencloud-eu/tsconfig@2.3.0':
     resolution: {integrity: sha512-N/5a43UY9khdSwWtm4ZD7V2D6ZQL/jW4vbHgiN7hogHxytyDtKikq24xiz7Aj+c0WNzZe1gSS0LOsIz+C3q3ew==}
-
-  '@opencloud-eu/web-client@2.3.0':
-    resolution: {integrity: sha512-Wrv7Q/tiwONjpbb2mzzCcuPRF5HypNmrty7XThboebItFQyaeVUolEtlZ9JS/w8SSnj1MpnSuP2TyrUnPuEWlQ==}
 
   '@opencloud-eu/web-client@3.1.0':
     resolution: {integrity: sha512-0AAT6lsCIH4ACYb3RBa+U12lvC+UEXrZTqJ676K8vJsH28uDI0xDXoYQ3FmfRJKxygvdk4hISVUnCAW8tC7deQ==}
@@ -3539,21 +3536,6 @@ snapshots:
       prettier: 3.5.3
 
   '@opencloud-eu/tsconfig@2.3.0': {}
-
-  '@opencloud-eu/web-client@2.3.0':
-    dependencies:
-      '@casl/ability': 6.7.3
-      '@microsoft/fetch-event-source': 2.0.1
-      axios: 1.9.0
-      fast-xml-parser: 4.5.3
-      lodash-es: 4.17.21
-      luxon: 3.6.1
-      uuid: 11.1.0
-      webdav: 5.8.0
-      xml-js: 1.6.11
-      zod: 3.24.4
-    transitivePeerDependencies:
-      - debug
 
   '@opencloud-eu/web-client@3.1.0':
     dependencies:
