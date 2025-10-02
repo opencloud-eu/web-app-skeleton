@@ -1,5 +1,5 @@
 <template>
-  <main class="oc-p">
+  <main class="ext:p-4">
     <h1>Hello developer!</h1>
     <p>Great to see that you want to learn how to build web apps for OpenCloud.</p>
     <p>
