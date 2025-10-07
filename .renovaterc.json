@@ -6,10 +6,12 @@
   "labels": ["Type:Dependencies"],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "devDependencies (non-major)",
-      "groupSlug": "dev-dependencies"
+      "updateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "updateTypes": ["minor", "patch"],
+      "enabled": false
     }
   ]
 }
