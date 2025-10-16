@@ -1,8 +1,8 @@
 services:
   opencloud:
     image: ${OC_IMAGE:-opencloudeu/opencloud-rolling:latest}
-    extra_hosts:
-      - host.docker.internal:${DOCKER_HOST:-host-gateway}
+    networks:
+      - opencloud-net
     entrypoint: /bin/sh
     command: ['-c', 'opencloud init || true && opencloud server']
     environment:
@@ -30,6 +30,10 @@ services:
 
   traefik:
     image: traefik:v3.5.3
+    networks:
+      opencloud-net:
+        aliases:
+          - host.docker.internal:9200
     restart: unless-stopped
     entrypoint:
       [
@@ -74,3 +78,6 @@ services:
 
 volumes:
   opencloud-config:
+
+networks:
+  opencloud-net:
