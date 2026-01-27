@@ -21,7 +21,7 @@
     "@opencloud-eu/prettier-config": "^4.0.0",
     "@opencloud-eu/tsconfig": "^4.0.0",
     "@opencloud-eu/web-client": "^4.0.0",
-    "@opencloud-eu/web-pkg": "^4.0.0",
+    "@opencloud-eu/web-pkg": "^5.0.0",
     "@types/node": "^24.0.0",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.22.0",
