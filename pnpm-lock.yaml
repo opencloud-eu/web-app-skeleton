@@ -22,8 +22,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       '@opencloud-eu/web-client':
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.0.0
+        version: 5.0.0
       '@opencloud-eu/web-pkg':
         specifier: ^4.0.0
         version: 4.0.0(@vue/compiler-sfc@3.5.22)(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
@@ -591,6 +591,9 @@ packages:
 
   '@opencloud-eu/web-client@4.0.0':
     resolution: {integrity: sha512-gntHPAlSNn5z0Wz9u8kALMHax9d6g+0/0ZwYG7Kt3I8O4wXR4Wc58Y7e8T3HGII0lDx8Zif0+piFiTf8oZpHwg==}
+
+  '@opencloud-eu/web-client@5.0.0':
+    resolution: {integrity: sha512-y71K0eQDqZPRUTX+ovvl1fV6yVaLyQiA1q+fXp9SnfePC2ulOW68tx8V4sWx3v7z7XI1QnYNRl4tLmicddZjEg==}
 
   '@opencloud-eu/web-pkg@4.0.0':
     resolution: {integrity: sha512-bFP8B1BaNNgR3rO9c31YPRpuuxx22+Ol6ethm/eyPp4QznvpiawDyQOo3AfwbaFS8DOoWaDaA7lTO3yFoQk5Xw==}
@@ -2465,6 +2468,7 @@ packages:
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -3498,6 +3502,21 @@ snapshots:
   '@opencloud-eu/tsconfig@4.0.0': {}
 
   '@opencloud-eu/web-client@4.0.0':
+    dependencies:
+      '@casl/ability': 6.7.3
+      '@microsoft/fetch-event-source': 2.0.1
+      axios: 1.10.0
+      fast-xml-parser: 4.5.3
+      lodash-es: 4.17.21
+      luxon: 3.7.1
+      uuid: 13.0.0
+      webdav: 5.8.0
+      xml-js: 1.6.11
+      zod: 4.0.5
+    transitivePeerDependencies:
+      - debug
+
+  '@opencloud-eu/web-client@5.0.0':
     dependencies:
       '@casl/ability': 6.7.3
       '@microsoft/fetch-event-source': 2.0.1
