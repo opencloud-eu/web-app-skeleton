@@ -25,8 +25,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       '@opencloud-eu/web-pkg':
-        specifier: ^4.0.0
-        version: 4.0.0(@vue/compiler-sfc@3.5.22)(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
+        specifier: ^5.0.0
+        version: 5.0.0(@vue/compiler-sfc@3.5.22)(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
       '@types/node':
         specifier: ^24.0.0
         version: 24.10.7
@@ -246,8 +246,8 @@ packages:
   '@codemirror/state@6.5.2':
     resolution: {integrity: sha512-FVqsPqtPWKVVL3dPSxy8wEF/ymIEuVzF1PK3VbUgrxXpJUSHQWWZz4JMToquRxnkw+36LTamCZG2iua2Ptq0fA==}
 
-  '@codemirror/view@6.38.3':
-    resolution: {integrity: sha512-x2t87+oqwB1mduiQZ6huIghjMt4uZKFEdj66IcXw7+a5iBEvv9lh7EWDRHI7crnD4BMGpnyq/RzmCGbiEZLcvQ==}
+  '@codemirror/view@6.39.11':
+    resolution: {integrity: sha512-bWdeR8gWM87l4DB/kYSF9A+dVackzDb/V56Tq7QVrQ7rn86W0rgZFtlL3g3pem6AeGcb9NQNoy3ao4WpW4h5tQ==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -568,8 +568,10 @@ packages:
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
-  '@opencloud-eu/design-system@4.0.0':
-    resolution: {integrity: sha512-p6HFcQYQxBwtnRirPv7+eRQga0smg4jciQujfs8InQDNghx+dXvw9PnyBYPquixqIK25X9CGoKu6hlpd5rP1wQ==}
+  '@opencloud-eu/design-system@5.0.0':
+    resolution: {integrity: sha512-y6F//KqpnAWe1ylzcqTRaoPR3mnDdvYuETbnUmA0uVpXah5H+A1m5V+VGmNXw6rqqms/yEgWQNK0u7ODw0FVfw==}
+    peerDependencies:
+      pinia: ^3.0.3
 
   '@opencloud-eu/eslint-config@4.0.0':
     resolution: {integrity: sha512-rUlwybK2qt+n0HpKtzhU5366VkT1rSGKtrzNsaJ4hGs7y0AYfprbQ0TcWz8SRSUj8uBbilDmjO+ggoVH0rrFlw==}
@@ -592,8 +594,11 @@ packages:
   '@opencloud-eu/web-client@4.0.0':
     resolution: {integrity: sha512-gntHPAlSNn5z0Wz9u8kALMHax9d6g+0/0ZwYG7Kt3I8O4wXR4Wc58Y7e8T3HGII0lDx8Zif0+piFiTf8oZpHwg==}
 
-  '@opencloud-eu/web-pkg@4.0.0':
-    resolution: {integrity: sha512-bFP8B1BaNNgR3rO9c31YPRpuuxx22+Ol6ethm/eyPp4QznvpiawDyQOo3AfwbaFS8DOoWaDaA7lTO3yFoQk5Xw==}
+  '@opencloud-eu/web-client@5.0.0':
+    resolution: {integrity: sha512-y71K0eQDqZPRUTX+ovvl1fV6yVaLyQiA1q+fXp9SnfePC2ulOW68tx8V4sWx3v7z7XI1QnYNRl4tLmicddZjEg==}
+
+  '@opencloud-eu/web-pkg@5.0.0':
+    resolution: {integrity: sha512-aihwkg8lOFvghJvzZ7geeUTHZ9yIHUA/T/g/bWBDECGVupaFW+EgveFNgXls/YuV0ZDF9VTN05xw4Tkhv1ekDQ==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1109,16 +1114,16 @@ packages:
   '@vue/test-utils@2.4.6':
     resolution: {integrity: sha512-FMxEjOpYNYiFe0GkaHsnJPXFHxQ6m4t8vI/ElPGpMWxZKpmRvQ33OIrvRXemy6yha03RxhOlQuy+gZMC3CQSow==}
 
-  '@vueuse/core@13.5.0':
-    resolution: {integrity: sha512-wV7z0eUpifKmvmN78UBZX8T7lMW53Nrk6JP5+6hbzrB9+cJ3jr//hUlhl9TZO/03bUkMK6gGkQpqOPWoabr72g==}
+  '@vueuse/core@14.1.0':
+    resolution: {integrity: sha512-rgBinKs07hAYyPF834mDTigH7BtPqvZ3Pryuzt1SD/lg5wEcWqvwzXXYGEDb2/cP0Sj5zSvHl3WkmMELr5kfWw==}
     peerDependencies:
       vue: ^3.5.0
 
-  '@vueuse/metadata@13.5.0':
-    resolution: {integrity: sha512-euhItU3b0SqXxSy8u1XHxUCdQ8M++bsRs+TYhOLDU/OykS7KvJnyIFfep0XM5WjIFry9uAPlVSjmVHiqeshmkw==}
+  '@vueuse/metadata@14.1.0':
+    resolution: {integrity: sha512-7hK4g015rWn2PhKcZ99NyT+ZD9sbwm7SGvp7k+k+rKGWnLjS/oQozoIZzWfCewSUeBmnJkIb+CNr7Zc/EyRnnA==}
 
-  '@vueuse/shared@13.5.0':
-    resolution: {integrity: sha512-K7GrQIxJ/ANtucxIXbQlUHdB0TPA8c+q5i+zbrjxuhJCnJ9GtBg75sBSnvmLSxHKPg2Yo8w62PWksl9kwH0Q8g==}
+  '@vueuse/shared@14.1.0':
+    resolution: {integrity: sha512-EcKxtYvn6gx1F8z9J5/rsg3+lTQnvOruQd8fUecW99DCK04BkWD7z5KQ/wTAx+DazyoEE9dJt/zV8OIEQbM6kw==}
     peerDependencies:
       vue: ^3.5.0
 
@@ -1840,10 +1845,6 @@ packages:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
 
-  js-generate-password@1.0.0:
-    resolution: {integrity: sha512-CHeBLSaph7lwGDvovQXvV66/u3dWTM2hIOWMrnSJ1i/2J1Pm76EyUlV6W7KLwKZSMgQi4U5hcTkbbyLm+XwtXQ==}
-    hasBin: true
-
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -2171,17 +2172,17 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  p-queue@8.1.0:
-    resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
-    engines: {node: '>=18'}
+  p-queue@9.1.0:
+    resolution: {integrity: sha512-O/ZPaXuQV29uSLbxWBGGZO1mCQXV2BLIwUr59JUU9SoH76mnYvtms7aafH/isNSNGwuEfP6W/4xD0/TJXxrizw==}
+    engines: {node: '>=20'}
 
   p-retry@6.2.1:
     resolution: {integrity: sha512-hEt02O4hUct5wtwg4H4KcWgDdm+l1bOaEy/hWzd8xtXB9BqxTWBBhb+2ImAtH4Cv4rPjV76xN3Zumqk3k3AhhQ==}
     engines: {node: '>=16.17'}
 
-  p-timeout@6.1.4:
-    resolution: {integrity: sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==}
-    engines: {node: '>=14.16'}
+  p-timeout@7.0.1:
+    resolution: {integrity: sha512-AxTM2wDGORHGEkPCt8yqxOTMgpfbEHqF51f/5fJCmwFC3C/zNcGT63SymH2ttOAaiIws2zVg4+izQCjrakcwHg==}
+    engines: {node: '>=20'}
 
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
@@ -2200,8 +2201,8 @@ packages:
   parse5@6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
 
-  password-sheriff@1.1.1:
-    resolution: {integrity: sha512-bt0ptyUs97Fb2ZXUcdQP0RYrBFjzO6KhGTjq4RkmR388c6wcT3khG0U7Bvvqwq3DyShEZ9IACed9JMVyAxdaCA==}
+  password-sheriff@2.0.0:
+    resolution: {integrity: sha512-wt/vYZVdrROLi6LWBBsau8lM0V24KTvtzN62Iunh+C6dV+5q8Jn1HccOBO6dmm8+4IuM7plSUyD2ZV6ykSIj6g==}
 
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
@@ -2465,6 +2466,7 @@ packages:
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -2913,14 +2915,14 @@ snapshots:
     dependencies:
       '@codemirror/language': 6.11.3
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
 
   '@codemirror/commands@6.8.1':
     dependencies:
       '@codemirror/language': 6.11.3
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
 
   '@codemirror/lang-angular@0.1.4':
@@ -2960,7 +2962,7 @@ snapshots:
       '@codemirror/lang-javascript': 6.2.4
       '@codemirror/language': 6.11.3
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
       '@lezer/css': 1.3.0
       '@lezer/html': 1.3.10
@@ -2976,7 +2978,7 @@ snapshots:
       '@codemirror/language': 6.11.3
       '@codemirror/lint': 6.8.5
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
       '@lezer/javascript': 1.5.1
 
@@ -2999,7 +3001,7 @@ snapshots:
       '@codemirror/lang-html': 6.4.9
       '@codemirror/language': 6.11.3
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
       '@lezer/highlight': 1.2.1
       '@lezer/lr': 1.4.2
@@ -3010,7 +3012,7 @@ snapshots:
       '@codemirror/lang-html': 6.4.9
       '@codemirror/language': 6.11.3
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
       '@lezer/markdown': 1.4.3
 
@@ -3073,7 +3075,7 @@ snapshots:
       '@codemirror/autocomplete': 6.18.7
       '@codemirror/language': 6.11.3
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
       '@lezer/xml': 1.0.6
 
@@ -3115,7 +3117,7 @@ snapshots:
   '@codemirror/language@6.11.3':
     dependencies:
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/common': 1.2.3
       '@lezer/highlight': 1.2.1
       '@lezer/lr': 1.4.2
@@ -3128,20 +3130,20 @@ snapshots:
   '@codemirror/lint@6.8.5':
     dependencies:
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       crelt: 1.0.6
 
   '@codemirror/search@6.5.11':
     dependencies:
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       crelt: 1.0.6
 
   '@codemirror/state@6.5.2':
     dependencies:
       '@marijn/find-cluster-break': 1.0.2
 
-  '@codemirror/view@6.38.3':
+  '@codemirror/view@6.39.11':
     dependencies:
       '@codemirror/state': 6.5.2
       crelt: 1.0.6
@@ -3441,11 +3443,11 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@opencloud-eu/design-system@4.0.0(@vue/compiler-sfc@3.5.22)(vue@3.5.22(typescript@5.9.3))':
+  '@opencloud-eu/design-system@5.0.0(@vue/compiler-sfc@3.5.22)(pinia@3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@emoji-mart/data': 1.2.1
       '@popperjs/core': 2.11.8
-      '@vueuse/core': 13.5.0(vue@3.5.22(typescript@5.9.3))
+      '@vueuse/core': 14.1.0(vue@3.5.22(typescript@5.9.3))
       deepmerge: 4.3.1
       emoji-mart: 5.6.0
       focus-trap: 7.6.5
@@ -3453,6 +3455,7 @@ snapshots:
       fuse.js: 7.1.0
       lodash-es: 4.17.21
       luxon: 3.7.1
+      pinia: 3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
       portal-vue: 3.0.0(vue@3.5.22(typescript@5.9.3))
       tippy.js: 6.3.7
       vue-inline-svg: 4.0.1(vue@3.5.22(typescript@5.9.3))
@@ -3512,13 +3515,29 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@opencloud-eu/web-pkg@4.0.0(@vue/compiler-sfc@3.5.22)(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))':
+  '@opencloud-eu/web-client@5.0.0':
+    dependencies:
+      '@casl/ability': 6.7.3
+      '@microsoft/fetch-event-source': 2.0.1
+      axios: 1.10.0
+      fast-xml-parser: 4.5.3
+      lodash-es: 4.17.21
+      luxon: 3.7.1
+      uuid: 13.0.0
+      webdav: 5.8.0
+      xml-js: 1.6.11
+      zod: 4.0.5
+    transitivePeerDependencies:
+      - debug
+
+  '@opencloud-eu/web-pkg@5.0.0(@vue/compiler-sfc@3.5.22)(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@casl/ability': 6.7.3
       '@casl/vue': 2.2.2(@casl/ability@6.7.3)(vue@3.5.22(typescript@5.9.3))
+      '@codemirror/view': 6.39.11
       '@microsoft/fetch-event-source': 2.0.1
-      '@opencloud-eu/design-system': 4.0.0(@vue/compiler-sfc@3.5.22)(vue@3.5.22(typescript@5.9.3))
-      '@opencloud-eu/web-client': 4.0.0
+      '@opencloud-eu/design-system': 5.0.0(@vue/compiler-sfc@3.5.22)(pinia@3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
+      '@opencloud-eu/web-client': 5.0.0
       '@sentry/vue': 10.15.0(pinia@3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
       '@uppy/core': 5.0.2
       '@uppy/tus': 5.0.1(@uppy/core@5.0.2)
@@ -3526,27 +3545,25 @@ snapshots:
       '@uppy/xhr-upload': 5.0.1(@uppy/core@5.0.2)
       '@vavt/cm-extension': 1.10.1
       '@vue/shared': 3.5.22
-      '@vueuse/core': 13.5.0(vue@3.5.22(typescript@5.9.3))
+      '@vueuse/core': 14.1.0(vue@3.5.22(typescript@5.9.3))
       axios: 1.10.0
       cropperjs: 1.6.2
       deepmerge: 4.3.1
       dompurify: 3.2.6
       filesize: 11.0.2
       fuse.js: 7.1.0
-      js-generate-password: 1.0.0
       lodash-es: 4.17.21
       luxon: 3.7.1
       mark.js: 8.11.1
       md-editor-v3: 6.0.1(vue@3.5.22(typescript@5.9.3))
       oidc-client-ts: 3.3.0
-      p-queue: 8.1.0
-      password-sheriff: 1.1.1
+      p-queue: 9.1.0
+      password-sheriff: 2.0.0
       pinia: 3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
       portal-vue: 3.0.0(vue@3.5.22(typescript@5.9.3))
       prismjs: 1.30.0
       qs: 6.14.0
       screenfull: 6.0.2
-      semver: 7.7.2
       uuid: 13.0.0
       vue-concurrency: 5.0.3(vue@3.5.22(typescript@5.9.3))
       vue-router: 4.5.1(vue@3.5.22(typescript@5.9.3))
@@ -4098,16 +4115,16 @@ snapshots:
       js-beautify: 1.15.1
       vue-component-type-helpers: 2.1.6
 
-  '@vueuse/core@13.5.0(vue@3.5.22(typescript@5.9.3))':
+  '@vueuse/core@14.1.0(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@types/web-bluetooth': 0.0.21
-      '@vueuse/metadata': 13.5.0
-      '@vueuse/shared': 13.5.0(vue@3.5.22(typescript@5.9.3))
+      '@vueuse/metadata': 14.1.0
+      '@vueuse/shared': 14.1.0(vue@3.5.22(typescript@5.9.3))
       vue: 3.5.22(typescript@5.9.3)
 
-  '@vueuse/metadata@13.5.0': {}
+  '@vueuse/metadata@14.1.0': {}
 
-  '@vueuse/shared@13.5.0(vue@3.5.22(typescript@5.9.3))':
+  '@vueuse/shared@14.1.0(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       vue: 3.5.22(typescript@5.9.3)
 
@@ -4230,7 +4247,7 @@ snapshots:
       '@codemirror/lint': 6.8.5
       '@codemirror/search': 6.5.11
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
 
   color-convert@2.0.1:
     dependencies:
@@ -4824,8 +4841,6 @@ snapshots:
 
   js-cookie@3.0.5: {}
 
-  js-generate-password@1.0.0: {}
-
   js-tokens@4.0.0: {}
 
   js-yaml@4.1.0:
@@ -4996,7 +5011,7 @@ snapshots:
       '@codemirror/language-data': 6.5.1
       '@codemirror/search': 6.5.11
       '@codemirror/state': 6.5.2
-      '@codemirror/view': 6.38.3
+      '@codemirror/view': 6.39.11
       '@lezer/highlight': 1.2.1
       '@types/markdown-it': 14.1.2
       '@vavt/copy2clipboard': 1.0.3
@@ -5120,10 +5135,10 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  p-queue@8.1.0:
+  p-queue@9.1.0:
     dependencies:
       eventemitter3: 5.0.1
-      p-timeout: 6.1.4
+      p-timeout: 7.0.1
 
   p-retry@6.2.1:
     dependencies:
@@ -5131,7 +5146,7 @@ snapshots:
       is-network-error: 1.1.0
       retry: 0.13.1
 
-  p-timeout@6.1.4: {}
+  p-timeout@7.0.1: {}
 
   package-json-from-dist@1.0.0: {}
 
@@ -5152,7 +5167,7 @@ snapshots:
 
   parse5@6.0.1: {}
 
-  password-sheriff@1.1.1: {}
+  password-sheriff@2.0.0: {}
 
   path-browserify@1.0.1: {}
 
