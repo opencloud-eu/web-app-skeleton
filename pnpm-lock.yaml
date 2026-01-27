@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@opencloud-eu/extension-sdk':
-        specifier: ^4.1.0-alpha.2
-        version: 4.1.0-alpha.2(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))(vue@3.5.22(typescript@5.9.3))
+        specifier: ^5.0.0
+        version: 5.0.0(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))(vue@3.5.22(typescript@5.9.3))
     devDependencies:
       '@opencloud-eu/eslint-config':
         specifier: ^4.0.0
@@ -576,10 +576,10 @@ packages:
     peerDependencies:
       eslint: ^9.0.0
 
-  '@opencloud-eu/extension-sdk@4.1.0-alpha.2':
-    resolution: {integrity: sha512-WGdkMPnMunUytd2AsqM7mq3KGslJCyF3QRy1rJdx3yx4WbfTwqVI0udxUmBcbNxJ5J2WmIQ5Jy9d7c/msInhlg==}
+  '@opencloud-eu/extension-sdk@5.0.0':
+    resolution: {integrity: sha512-yWhOjma1BErLc2EsW/MNkN3WOyScqOphsVMQt9xKGwairK1A+LK8rK3eNrd0XeUdZiLa1Bq/UKAcvKrEt4DnKA==}
     peerDependencies:
-      vite: ^5 || ^6.0.0 || ^7.0.0
+      vite: ^7.2.0
 
   '@opencloud-eu/prettier-config@4.0.0':
     resolution: {integrity: sha512-4oRnQ98wYFS46eDbX5+0otL4iOJKKdIe3I+0JvGpeF+FZhHM4Hc57eWI60g3hVOPou6glMDyUdHViYwfAAaqXQ==}
@@ -2465,6 +2465,7 @@ packages:
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -3483,7 +3484,7 @@ snapshots:
       - supports-color
       - vue-eslint-parser
 
-  '@opencloud-eu/extension-sdk@4.1.0-alpha.2(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))(vue@3.5.22(typescript@5.9.3))':
+  '@opencloud-eu/extension-sdk@5.0.0(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@tailwindcss/vite': 4.1.14(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))
       '@vitejs/plugin-vue': 6.0.0(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))(vue@3.5.22(typescript@5.9.3))
