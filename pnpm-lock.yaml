@@ -13,8 +13,8 @@ importers:
         version: 4.1.0-alpha.2(vite@7.1.9(@types/node@24.10.7)(jiti@2.6.1)(lightningcss@1.30.1))(vue@3.5.22(typescript@5.9.3))
     devDependencies:
       '@opencloud-eu/eslint-config':
-        specifier: ^4.0.0
-        version: 4.0.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@9.4.3(eslint@9.37.0(jiti@2.6.1)))
+        specifier: ^5.0.0
+        version: 5.0.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@9.4.3(eslint@9.37.0(jiti@2.6.1)))
       '@opencloud-eu/prettier-config':
         specifier: ^4.0.0
         version: 4.0.0(prettier@3.6.2)
@@ -571,8 +571,8 @@ packages:
   '@opencloud-eu/design-system@4.0.0':
     resolution: {integrity: sha512-p6HFcQYQxBwtnRirPv7+eRQga0smg4jciQujfs8InQDNghx+dXvw9PnyBYPquixqIK25X9CGoKu6hlpd5rP1wQ==}
 
-  '@opencloud-eu/eslint-config@4.0.0':
-    resolution: {integrity: sha512-rUlwybK2qt+n0HpKtzhU5366VkT1rSGKtrzNsaJ4hGs7y0AYfprbQ0TcWz8SRSUj8uBbilDmjO+ggoVH0rrFlw==}
+  '@opencloud-eu/eslint-config@5.0.0':
+    resolution: {integrity: sha512-V2LWu5frlTCpoDJyZrlG3Fw3x+AO4O4kZ57XcSytezDMCbsWzv2D8koM4teoYLJzWNq1y+uehHU8tyORSkfPiQ==}
     peerDependencies:
       eslint: ^9.0.0
 
@@ -1718,8 +1718,8 @@ packages:
     resolution: {integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==}
     engines: {node: '>=18'}
 
-  globals@16.3.0:
-    resolution: {integrity: sha512-bqWEnJ1Nt3neqx2q5SFfGS8r/ahumIakg3HcwtNlrVlwXIeNumWn/c7Pn/wKzGhf6SaW6H6uWXLqC30STCMchQ==}
+  globals@17.2.0:
+    resolution: {integrity: sha512-tovnCz/fEq+Ripoq+p/gN1u7l6A7wwkoBT9pRCzTHzsD/LvADIzXZdjmRymh5Ztf0DYC3Rwg5cZRYjxzBmzbWg==}
     engines: {node: '>=18'}
 
   gopd@1.2.0:
@@ -2465,6 +2465,7 @@ packages:
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -3463,7 +3464,7 @@ snapshots:
       - '@vue/compiler-sfc'
       - vue
 
-  '@opencloud-eu/eslint-config@4.0.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@9.4.3(eslint@9.37.0(jiti@2.6.1)))':
+  '@opencloud-eu/eslint-config@5.0.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@9.4.3(eslint@9.37.0(jiti@2.6.1)))':
     dependencies:
       '@babel/eslint-parser': 7.28.0(@babel/core@7.25.2)(eslint@9.37.0(jiti@2.6.1))
       '@typescript-eslint/parser': 8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
@@ -3474,7 +3475,7 @@ snapshots:
       eslint-plugin-unused-imports: 4.1.4(@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))
       eslint-plugin-vue: 10.3.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@9.4.3(eslint@9.37.0(jiti@2.6.1)))
       eslint-plugin-vuejs-accessibility: 2.4.1(eslint@9.37.0(jiti@2.6.1))
-      globals: 16.3.0
+      globals: 17.2.0
       typescript: 5.9.3
       typescript-eslint: 8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
     transitivePeerDependencies:
@@ -4732,7 +4733,7 @@ snapshots:
 
   globals@15.15.0: {}
 
-  globals@16.3.0: {}
+  globals@17.2.0: {}
 
   gopd@1.2.0: {}
 
