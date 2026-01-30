@@ -19,8 +19,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(prettier@3.6.2)
       '@opencloud-eu/tsconfig':
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.0.0
+        version: 5.0.0
       '@opencloud-eu/web-client':
         specifier: ^4.0.0
         version: 4.0.0
@@ -588,8 +588,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@opencloud-eu/tsconfig@4.0.0':
-    resolution: {integrity: sha512-INm1L3ATCiF9sUdH5uaF+JjfRx99fuYUd7Xu/a7wxVyu9j/VG9OntLu+tXNgc3AOaoHK0zHC4c51WJXF2L6r9g==}
+  '@opencloud-eu/tsconfig@5.0.0':
+    resolution: {integrity: sha512-qUY5q5paG53ZPv0uaEO99oCWi6qTXxo1hC3QJeYd/oAK5aWYLoZgQ4yvVE+p+4w9T8ptoi5V9RakmKCf1a7KVg==}
 
   '@opencloud-eu/web-client@4.0.0':
     resolution: {integrity: sha512-gntHPAlSNn5z0Wz9u8kALMHax9d6g+0/0ZwYG7Kt3I8O4wXR4Wc58Y7e8T3HGII0lDx8Zif0+piFiTf8oZpHwg==}
@@ -3498,7 +3498,7 @@ snapshots:
     dependencies:
       prettier: 3.6.2
 
-  '@opencloud-eu/tsconfig@4.0.0': {}
+  '@opencloud-eu/tsconfig@5.0.0': {}
 
   '@opencloud-eu/web-client@4.0.0':
     dependencies:
