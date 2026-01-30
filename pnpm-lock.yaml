@@ -16,8 +16,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(@babel/core@7.25.2)(@typescript-eslint/eslint-plugin@8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@9.4.3(eslint@9.37.0(jiti@2.6.1)))
       '@opencloud-eu/prettier-config':
-        specifier: ^4.0.0
-        version: 4.0.0(prettier@3.6.2)
+        specifier: ^5.0.0
+        version: 5.0.0(prettier@3.6.2)
       '@opencloud-eu/tsconfig':
         specifier: ^5.0.0
         version: 5.0.0
@@ -583,8 +583,8 @@ packages:
     peerDependencies:
       vite: ^7.2.0
 
-  '@opencloud-eu/prettier-config@4.0.0':
-    resolution: {integrity: sha512-4oRnQ98wYFS46eDbX5+0otL4iOJKKdIe3I+0JvGpeF+FZhHM4Hc57eWI60g3hVOPou6glMDyUdHViYwfAAaqXQ==}
+  '@opencloud-eu/prettier-config@5.0.0':
+    resolution: {integrity: sha512-3ddpTJc1KzB/4nx7VrMC8oFPgFszK0YpNlAn90l2/w3mKXeVczhcK2Iq7KnC2XR6Rh1DirD43KAh8RDBIofP+g==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -3491,7 +3491,7 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  '@opencloud-eu/prettier-config@4.0.0(prettier@3.6.2)':
+  '@opencloud-eu/prettier-config@5.0.0(prettier@3.6.2)':
     dependencies:
       prettier: 3.6.2
 
