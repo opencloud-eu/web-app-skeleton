@@ -40,5 +40,5 @@
   "dependencies": {
     "@opencloud-eu/extension-sdk": "^6.0.0"
   },
-  "packageManager": "pnpm@10.18.1"
+  "packageManager": "pnpm@10.28.1"
 }
