@@ -17,7 +17,7 @@
     "test:unit": "NODE_OPTIONS=--unhandled-rejections=throw vitest"
   },
   "devDependencies": {
-    "@opencloud-eu/eslint-config": "^7.0.0",
+    "@opencloud-eu/eslint-config": "^8.0.0",
     "@opencloud-eu/extension-sdk": "^7.0.0",
     "@opencloud-eu/prettier-config": "^7.0.0",
     "@opencloud-eu/tsconfig": "^7.0.0",

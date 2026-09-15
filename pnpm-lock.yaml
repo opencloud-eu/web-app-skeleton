@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@opencloud-eu/eslint-config':
-        specifier: ^7.0.0
-        version: 7.0.0(@typescript-eslint/eslint-plugin@8.59.0(@typescript-eslint/parser@8.59.0(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.2.1(jiti@2.6.1)))
+        specifier: ^8.0.0
+        version: 8.0.0(@typescript-eslint/eslint-plugin@8.59.0(@typescript-eslint/parser@8.59.0(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.2.1(jiti@2.6.1)))
       '@opencloud-eu/extension-sdk':
         specifier: ^7.0.0
         version: 7.0.0(node-fetch@3.3.2)(typescript@6.0.3)(vite@8.0.9(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3))(vitest@4.1.4(@types/node@25.6.0)(happy-dom@20.9.0)(vite@8.0.9(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.8.3)))(vue-tsc@3.2.7(typescript@6.0.3))(vue@3.5.32(typescript@6.0.3))
@@ -283,8 +283,8 @@ packages:
     peerDependencies:
       pinia: ^3.0.3
 
-  '@opencloud-eu/eslint-config@7.0.0':
-    resolution: {integrity: sha512-63swpqYLCJoYG2bs/4739US0K0N4MVD8kns4GNz3aKA0GpTVSTJ1qebZjGARglQ+TomYHJldRwW1JHpJfR6wlw==}
+  '@opencloud-eu/eslint-config@8.0.0':
+    resolution: {integrity: sha512-PhMSthr2Y/VyGz8S4U2ljhCa+6sKJ4N3UMrnUEAvBCcn9eb+0nuJbro/J5Au2blQ0Up0oRkeQAQ0vePPVW45aA==}
     peerDependencies:
       eslint: ^9.0.0 || ^10.0.0
 
@@ -1162,6 +1162,7 @@ packages:
   cron-parser@4.9.0:
     resolution: {integrity: sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==}
     engines: {node: '>=12.0.0'}
+    deprecated: v4 is no longer maintained, upgrade to v5
 
   cropperjs@2.1.1:
     resolution: {integrity: sha512-FDJMarkY+/SepYarPZsvkG2LmI2PElecciMFnvBiBIoKnFYua/scprC5qejCLLyuX2jEqJRS2njbAsHxfjtIXA==}
@@ -2830,7 +2831,7 @@ snapshots:
       - '@vue/compiler-sfc'
       - vue
 
-  '@opencloud-eu/eslint-config@7.0.0(@typescript-eslint/eslint-plugin@8.59.0(@typescript-eslint/parser@8.59.0(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.2.1(jiti@2.6.1)))':
+  '@opencloud-eu/eslint-config@8.0.0(@typescript-eslint/eslint-plugin@8.59.0(@typescript-eslint/parser@8.59.0(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.1(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.2.1(jiti@2.6.1)))':
     dependencies:
       '@typescript-eslint/parser': 8.59.0(eslint@10.2.1(jiti@2.6.1))(typescript@6.0.3)
       eslint: 10.2.1(jiti@2.6.1)
