@@ -17,12 +17,12 @@
     "test:unit": "NODE_OPTIONS=--unhandled-rejections=throw vitest"
   },
   "devDependencies": {
-    "@opencloud-eu/eslint-config": "^7.0.0",
-    "@opencloud-eu/extension-sdk": "^7.0.0",
-    "@opencloud-eu/prettier-config": "^7.0.0",
-    "@opencloud-eu/tsconfig": "^7.0.0",
-    "@opencloud-eu/web-client": "^7.0.0",
-    "@opencloud-eu/web-pkg": "^7.0.0",
+    "@opencloud-eu/eslint-config": "^8.0.0",
+    "@opencloud-eu/extension-sdk": "^8.0.0",
+    "@opencloud-eu/prettier-config": "^8.0.0",
+    "@opencloud-eu/tsconfig": "^8.0.0",
+    "@opencloud-eu/web-client": "^8.0.0",
+    "@opencloud-eu/web-pkg": "^8.0.0",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^10.0.0",
     "happy-dom": "^20.0.0",
@@ -34,7 +34,7 @@
     "vue": "^3.5.13",
     "vue-router": "^5.0.0",
     "vue-tsc": "^3.0.0",
-    "vue3-gettext": "^4.0.0-beta.1"
+    "vue3-gettext": "^4.0.0"
   },
-  "packageManager": "pnpm@11.1.3"
+  "packageManager": "pnpm@11.27.0"
 }
