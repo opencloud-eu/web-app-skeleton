@@ -18,8 +18,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(prettier@3.8.3)
       '@opencloud-eu/tsconfig':
-        specifier: ^7.0.0
-        version: 7.0.0
+        specifier: ^8.0.0
+        version: 8.0.0
       '@opencloud-eu/web-client':
         specifier: ^7.0.0
         version: 7.0.0
@@ -299,8 +299,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@opencloud-eu/tsconfig@7.0.0':
-    resolution: {integrity: sha512-T0UJmzm0J40hYYwqc/+589outZfeHMMvDEujzkKdCjCUS4U619uL6deCS7KhGnpuNtIPR/Q4lF2vUFxJn+rJ+A==}
+  '@opencloud-eu/tsconfig@8.0.0':
+    resolution: {integrity: sha512-UicH34jSFGjUt4qYfB95vsvBUz6CtapSMCLDR0mo5h2YKeId/QQye2MrkrSiUJdQqq37Q9rpfhy9ZcxWAKMleA==}
 
   '@opencloud-eu/web-client@7.0.0':
     resolution: {integrity: sha512-GmZO2kBf849gSB+wwZxi6zzHb4U2VCcl9nFG0EwDLA/BfX06K5gem8bNAxU9AZtOL7Yi9f3LXjsW+g8D/qEMUw==}
@@ -1162,6 +1162,7 @@ packages:
   cron-parser@4.9.0:
     resolution: {integrity: sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==}
     engines: {node: '>=12.0.0'}
+    deprecated: v4 is no longer maintained, upgrade to v5
 
   cropperjs@2.1.1:
     resolution: {integrity: sha512-FDJMarkY+/SepYarPZsvkG2LmI2PElecciMFnvBiBIoKnFYua/scprC5qejCLLyuX2jEqJRS2njbAsHxfjtIXA==}
@@ -2865,7 +2866,7 @@ snapshots:
     dependencies:
       prettier: 3.8.3
 
-  '@opencloud-eu/tsconfig@7.0.0': {}
+  '@opencloud-eu/tsconfig@8.0.0': {}
 
   '@opencloud-eu/web-client@7.0.0':
     dependencies:
