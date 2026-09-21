@@ -1,10 +1,10 @@
 services:
   opencloud:
     image: ${OC_IMAGE:-opencloudeu/opencloud-rolling:latest}
-    networks:
-      - opencloud-net
     entrypoint: /bin/sh
     command: ['-c', 'opencloud init || true && opencloud server']
+    extra_hosts:
+      - host.docker.internal:host-gateway
     environment:
       OC_URL: https://host.docker.internal:9200
       OC_INSECURE: true
@@ -12,72 +12,12 @@ services:
       IDM_ADMIN_PASSWORD: admin
       IDM_CREATE_DEMO_USERS: true
       PROXY_ENABLE_BASIC_AUTH: true
-      PROXY_TLS: 'false'
       WEB_ASSET_APPS_PATH: /web/apps
-    labels:
-      traefik.enable: true
-      traefik.http.routers.opencloud.tls: true
-      traefik.http.routers.opencloud.rule: Host(`host.docker.internal`) && PathPrefix(`/`)
-      traefik.http.routers.opencloud.entrypoints: opencloud
-      traefik.http.services.opencloud.loadbalancer.server.port: 9200
-      traefik.http.routers.opencloud.middlewares: cors
-    volumes:
-      - opencloud-config:/etc/opencloud
-      - ./dev/docker/opencloud/apps.yaml:/etc/opencloud/apps.yaml
-      - ./dist:/web/apps/skeleton
-    depends_on:
-      - traefik
-
-  traefik:
-    image: traefik:v3.7.1
-    networks:
-      opencloud-net:
-        aliases:
-          - host.docker.internal:9200
-    restart: unless-stopped
-    entrypoint:
-      [
-        '/bin/sh',
-        '-c',
-        "[ -f /certificates/server.key ] && ./entrypoint.sh $$@ || (apk add openssl && openssl req -subj '/CN=opencloud.test' -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -keyout /certificates/server.key -out /certificates/server.crt && chmod -R 777 /certificates && ./entrypoint.sh $$@)"
-      ]
-    command:
-      - '--pilot.dashboard=false'
-      - '--log.level=DEBUG'
-      - '--api.dashboard=true'
-      - '--api.insecure=true'
-      - '--providers.file.directory=/configs'
-      - '--providers.docker=true'
-      - '--providers.docker.exposedbydefault=false'
-      - '--entrypoints.web.address=:80'
-      - '--entrypoints.opencloud.address=:9200'
-      - '--entrypoints.opencloud-federated.address=:10200'
-      - '--entrypoints.websecure.address=:443'
-      - '--entrypoints.websecure.http.middlewares=https_config@docker'
-      - '--entrypoints.websecure.http.tls.options=default'
-    labels:
-      traefik.enable: true
-      traefik.http.routers.http_catchall.rule: HostRegexp(`{any:.+}`)
-      traefik.http.routers.http_catchall.entrypoints: web
-      traefik.http.routers.http_catchall.middlewares: https_config
-      traefik.http.middlewares.https_config.headers.sslRedirect: true
-      traefik.http.middlewares.https_config.headers.stsSeconds: 63072000
-      traefik.http.middlewares.https_config.headers.stsIncludeSubdomains: true
-      traefik.http.middlewares.cors.headers.accesscontrolallowmethods: '*'
-      traefik.http.middlewares.cors.headers.accesscontrolallowheaders: '*'
-      traefik.http.middlewares.cors.headers.accesscontrolalloworiginlist: '*'
-      traefik.http.middlewares.cors.headers.accesscontrolexposeheaders: '*'
-      traefik.http.middlewares.cors.headers.accesscontrolmaxage: 100
-      traefik.http.middlewares.cors.headers.addvaryheader: true
     ports:
       - '9200:9200'
     volumes:
-      - './dev/docker/traefik/certificates:/certificates'
-      - './dev/docker/traefik/configs:/configs'
-      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+      - opencloud-config:/etc/opencloud
+      - ./dist:/web/apps/skeleton
 
 volumes:
   opencloud-config:
-
-networks:
-  opencloud-net:
