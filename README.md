@@ -1,6 +1,6 @@
 # web-app-skeleton
 
-This repository provides all the bits and pieces for an easy start to build your own web app or extension for OpenCloud.
+This repository provides all the bits and pieces for an easy start to build your own web app for OpenCloud.
 
 ## Getting Started
 
@@ -39,7 +39,6 @@ You should start by rephrasing the app name `skeleton` to your desired app name 
 
 - package.json
 - vite.config.ts
-- dev/docker/opencloud/apps.yaml (if you need config for your app)
 - src/index.ts
 - tests/unit/App.spec.ts
 

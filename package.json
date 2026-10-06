@@ -17,6 +17,7 @@
     "test:unit": "NODE_OPTIONS=--unhandled-rejections=throw vitest"
   },
   "devDependencies": {
+    "@opencloud-eu/design-system": "^8.0.0",
     "@opencloud-eu/eslint-config": "^8.0.0",
     "@opencloud-eu/extension-sdk": "^8.0.0",
     "@opencloud-eu/prettier-config": "^8.0.0",
@@ -30,7 +31,7 @@
     "tailwindcss": "^4.0.0",
     "typescript": "^6.0.0",
     "vite": "^8.0.0",
-    "vitest": "^4.0.0",
+    "vitest": "^5.0.0",
     "vue": "^3.5.13",
     "vue-router": "^5.0.0",
     "vue-tsc": "^3.0.0",
