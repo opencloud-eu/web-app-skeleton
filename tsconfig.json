@@ -1,6 +1,6 @@
 {
   "extends": "@opencloud-eu/tsconfig",
   "compilerOptions": {
-    "types": ["vitest/globals"]
+    "types": ["vite/client", "vitest/globals"]
   }
 }
